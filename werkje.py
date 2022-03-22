@@ -190,6 +190,7 @@ def main(input_video_file: str, output_video_file: str) -> None:
 
             # write frame that you processed to output
             print("Trying to write frame")
+            print(f"frame is {type(frame)}")
             out.write(frame)
             print("Written frame")
 
