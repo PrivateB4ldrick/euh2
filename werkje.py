@@ -189,11 +189,11 @@ def main(input_video_file: str, output_video_file: str) -> None:
     
 
             # write frame that you processed to output
-            print("Trying to write frame")
-            print(f"frame is {type(frame)}")
+            #print("Trying to write frame")
+            #print(f"frame is {type(frame)}")
             frame = np.uint8(255 * frame)
             out.write(frame)
-            print("Written frame")
+            #print("Written frame")
 
             # (optional) display the resulting frame
             cv2.imshow('Frame', frame)
