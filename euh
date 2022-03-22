@@ -209,13 +209,13 @@ def main(input_video_file: str, output_video_file: str) -> None:
     cv2.destroyAllWindows()
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='OpenCV video processing')
-    parser.add_argument('-i', "--input", help='full path to input video that will be processed')
-    parser.add_argument('-o', "--output", help='full path for saving processed video output')
-    args = parser.parse_args()
+#if __name__ == '__main__':
+#    parser = argparse.ArgumentParser(description='OpenCV video processing')
+#    parser.add_argument('-i', "--input", help='full path to input video that will be processed')
+#    parser.add_argument('-o', "--output", help='full path for saving processed video output')
+#    args = parser.parse_args()
 
-    if args.input is None or args.output is None:
-        sys.exit("Please provide path to input and output video files! See --help")
+#    if args.input is None or args.output is None:
+#        sys.exit("Please provide path to input and output video files! See --help")
 
 main("C:\\Users\\OHPC\\Desktop\\Daaaaaaaaaaaaaarreen\\futbol\\booo.mp4", "C:\\Users\\OHPC\\Desktop\\Daaaaaaaaaaaaaarreen\\futbol\\output1.mp4")
