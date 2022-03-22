@@ -20,7 +20,9 @@ def main(input_video_file: str, output_video_file: str) -> None:
     frame_width = int(cap.get(3))
     frame_height = int(cap.get(4))
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')        # saving output video as .mp4
+    print("trying to VideoWrite file")
     out = cv2.VideoWriter(output_video_file, fourcc, fps, (frame_width, frame_height))
+    print("Video succesfully written")
 
     # while loop where the real work happens
     while cap.isOpened():
