@@ -209,7 +209,7 @@ def main(input_video_file: str, output_video_file: str) -> None:
     cv2.destroyAllWindows()
 
 
-#if __name__ == '__main__':
+if __name__ == '__main__': Main()
 #    parser = argparse.ArgumentParser(description='OpenCV video processing')
 #    parser.add_argument('-i', "--input", help='full path to input video that will be processed')
 #    parser.add_argument('-o', "--output", help='full path for saving processed video output')
